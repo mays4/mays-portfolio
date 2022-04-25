@@ -1,14 +1,22 @@
 .profile{
-  width:450px;
-  height: 450px;
-  margin-left: 40%;
+  width:500px;
+  height: 500px;
+  margin-left: 45%;
+}
+@media screen and (max-width: 1600px) {
+  .profile{
+    margin-top: 20px;
+    margin-left: 1%;
+    width:350px;
+    height: 350px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .profile{
     margin-top: 20px;
-    margin-left: 10%;
-    width:300px;
-    height: 300px;
+    margin-left: 5%;
+    width:350px;
+    height: 350px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -23,8 +31,8 @@
   .profile{
     margin-top: 20px;
     margin-left: 10%;
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
   }
 }
 @media screen and (max-width: 500px) {

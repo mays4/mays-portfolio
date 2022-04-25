@@ -29,9 +29,8 @@ export default{
       id:1,
       tag: 'React',
       image:Landing,
-      info:'Amazon Clone it is a mini Amazon Project..',
-      description: 'RESTful URL Shortening service.\n' + 
-      'Tech Stack: Express, Node' ,
+      info:'React, Next Js , Tailwind , Next Auth for authentication, Stripe API, Firebase'  ,
+      description: 'Amazon Clone it is a mini Amazon Project.',
       title: 'Amazon Clone',
       
       links: [
@@ -48,13 +47,13 @@ export default{
       id:4,
       tag: 'Express',
       image: Tweeter,
-      info:'This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.',
-      description: 'Twitter clone powered by AJAX. Tech Stack: Express, jQuery, MongoDB, Node',
+      info:'Technology Used: HTML, CSS , JS, jQuery, AJAX.',
+      description: 'Tweeter is a single-page app Twitter clone.',
       title: 'Tweeter',
      
       links: [
           {link: 'https://github.com/mays4/tweeter', icon:git},
-          {link: 'https://github.com/mays4/tweeter', icon: faDisplay},
+          ,
       ],
       images:[{
         image_1:Tweeter,
@@ -64,11 +63,10 @@ export default{
     },
     {
     id:2,
-    tag: 'React',
+    tag: 'Express',
     image:Register,
-    info:'TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).',
-    description: 'RESTful URL Shortening service.\n' + 
-    'Tech Stack: Express, Node' ,
+    info:'RESTful URL Shortening service.\n' + 'Tech Stack: Express, Node' ,
+    description: 'TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).',
     title: 'TinyApp',
     
     links: [
@@ -85,7 +83,7 @@ export default{
     id:5,
     tag: 'React',
     image:Page,
-    info:'is an online platform for buying and selling homes without the use of blind-bidding. Instead of making an offer on a home without knowing the offers that have already been made, **HomeBidder** empowers buyers by putting the tools and data they need at their fingertips to help inform their decision-making during this critical process..',
+    info:'A real chat app using Stream-api.',
     description: 'A real chat app using Stream-api' ,
     title: 'Medical-pager',
     
@@ -103,14 +101,13 @@ export default{
       id:3,
       tag: 'React',
       image:homebidder1,
-      info:'is an online platform for buying and selling homes without the use of blind-bidding. Instead of making an offer on a home without knowing the offers that have already been made, **HomeBidder** empowers buyers by putting the tools and data they need at their fingertips to help inform their decision-making during this critical process..',
-      description: 'RESTful URL Shortening service.\n' + 
-      'Tech Stack: Express, Node' ,
+      info:'HomeBidder is an online platform for buying and selling homes without the use of blind-bidding..',
+      description: 'Technology Used :React, React-Bootstrap, CSS,PostgreSQL, node.js, Express, Axios, JWT,Socket-io, Cloudinary API' ,
       title: 'HomeBidder',
       
       links: [
           {link: 'https://github.com/RameesaRijas/HomeBidder', icon:git},
-          {link: 'https://app-tiny.herokuapp.com/login', icon: faDisplay},
+          ,
       ] ,
       images:[{
         image_1:homebidder1,
@@ -122,14 +119,13 @@ export default{
         id:6,
         tag: 'React',
         image: View,
-        info:'This is a Interview Scheduler app using React.',
-        description: 'RESTful URL Shortening service.\n' + 
-        'Tech Stack: Express, Node' ,
+        info:'TTechnology Used:React, PostgreSQL, Axios, Jest, storybook, Cypress.',
+        description: 'Interview Scheduler single app page,where students can book appointments with interviewers and edit and delete them.' ,
         title: 'Scheduler',
         
         links: [
             {link: 'https://github.com/mays4/Scheduler', icon:git},
-            {link: 'https://app-tiny.herokuapp.com/login', icon: faDisplay},
+           ,
         ] ,
         images:[{
           image_1: View,

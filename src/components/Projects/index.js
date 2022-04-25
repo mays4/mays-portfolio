@@ -15,7 +15,7 @@ const Projcet = () => {
 
 
   const { theme, setTheme } = useContext(ThemeContext);
-  const [tabValue, setTabValue] = useState('All');
+  const [tag, setTag] = useState('All');
   const [project, setProject] = useState(false);
 
 
@@ -43,16 +43,16 @@ const Projcet = () => {
               <h2 className="porojects_par">Some of the projects</h2>
               <div>
                 <Tabs
-                  value={tabValue}
-                  className="custom_tabs"
+                  value={tag}
+                  className="custom"
                   indicatorColor="gray"
-                  onChange={(event, newValue) => setTabValue(newValue)}
+                  onChange={(event, newValue) => setTag(newValue)}
                 >
                   <Tab
                     value="All"
                     label="All"
                     className={
-                      tabValue ? 'customTabs_item active' : 'customtabs_item'
+                      tag ? 'custom_item active' : 'custom_item'
                     }
                   />
                   {[...new Set(data.projects.map((item) => item.tag))].map(
@@ -61,9 +61,9 @@ const Projcet = () => {
                         label={tag}
                         value={tag}
                         className={
-                          tabValue === tag
-                            ? 'customTabs_item active'
-                            : 'customTabs_item'
+                          tag === tag
+                            ? 'custom_item active'
+                            : 'custom_item'
                         }
                       />
                     )
@@ -74,7 +74,7 @@ const Projcet = () => {
             <div className="post_wrapper">
               {data.projects.map((item) => (
                 <>
-                  {tabValue === item.tag || tabValue === 'All' ? (
+                  {tag === item.tag || tag === 'All' ? (
                     <div
                       className="project-post"
                       onClick={() => setProject(item)}

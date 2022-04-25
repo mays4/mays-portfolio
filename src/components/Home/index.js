@@ -12,6 +12,7 @@ import Contact from '../Contact';
 import About from '../About';
 import Projects from '../Projects';
 
+
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const { theme, setTheme } = useContext(ThemeContext);
@@ -39,6 +40,7 @@ const Home = () => {
       setLetterClass('text-animate-hover');
     }, 4000);
   }, []);
+  
 
   return (
     <>
@@ -71,7 +73,7 @@ const Home = () => {
                     idx={21}
                   />
                 </h1>
-
+                
                 <h2>Full stack Developer</h2>
                 <br></br>
                 <Link to="/contact" className="flat-button">

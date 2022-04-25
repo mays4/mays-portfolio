@@ -84,7 +84,7 @@
   }
   .letters{
    
-    color: gray;
+    color: #fff;
 
   }
   .zone .letters{
@@ -110,10 +110,12 @@
     border: 1px solid #fff;
 
   &:hover {
-       background-color:gray;
-      color: #000;
-      border: #000;
-      box-shadow:0 0 2px 0px #fff;
+      //  background-color:gray;
+      // color: #000;
+      // border: #000;
+      // box-shadow:0 0 2px 0px #fff;
+      background:#3f0d2e;
+      color: #FDA9A9;
     
   }
 }
@@ -187,9 +189,7 @@
   width: 100%;
   // height: auto;
 }
-.contact .zone .parg .contact-info-p{
-  // color: #fff;
-}
+
 
 
 @media screen and (max-width: 576px) {
