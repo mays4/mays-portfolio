@@ -80,7 +80,7 @@ const Projcet = () => {
                       onClick={() => setProject(item)}
                     >
                       <img
-                        // onClick={handleShow}
+                        
                         className="thum"
                         src={item.image}
                         alt="register page"
@@ -96,11 +96,12 @@ const Projcet = () => {
             </div>
 
             <Dialog open={project} className="dail">
-              <DialogTitle className="post-title">{project.title}</DialogTitle>
-              <DialogContent>
-                <div className="close_x">
+            <div className="close_x">
                   <button onClick={() => setProject(false)}>X</button>
                 </div>
+              <DialogTitle className="post-title">{project.title}</DialogTitle>
+              <DialogContent>
+               
 
                 {project?.images?.map((image, index) => (
                   <Carousel

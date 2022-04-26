@@ -65,7 +65,7 @@ export default{
     id:2,
     tag: 'Express',
     image:Register,
-    info:'RESTful URL Shortening service.\n' + 'Tech Stack: Express, Node' ,
+    info: 'Tech Stack: Express, Node',
     description: 'TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).',
     title: 'TinyApp',
     
@@ -83,8 +83,8 @@ export default{
     id:5,
     tag: 'React',
     image:Page,
-    info:'A real chat app using Stream-api.',
-    description: 'A real chat app using Stream-api' ,
+    info:'React , Stream-api,twilio',
+    description: 'A real chat app using Stream-api , also Twillio api used  to send notifications to offline users that they got messages using there phoneNumbers' ,
     title: 'Medical-pager',
     
     links: [
@@ -119,7 +119,7 @@ export default{
         id:6,
         tag: 'React',
         image: View,
-        info:'TTechnology Used:React, PostgreSQL, Axios, Jest, storybook, Cypress.',
+        info:'Technology Used:React, PostgreSQL, Axios, Jest, storybook, Cypress.',
         description: 'Interview Scheduler single app page,where students can book appointments with interviewers and edit and delete them.' ,
         title: 'Scheduler',
         
