@@ -30,7 +30,7 @@ export default{
       tag: 'React',
       image:Landing,
       info:'React, Next Js , Tailwind , Next Auth for authentication, Stripe API, Firebase'  ,
-      description: 'Amazon Clone it is a mini Amazon Project.',
+      description: 'Amazon Clone it is a mini Amazon Project.use Stripe API to checkout',
       title: 'Amazon Clone',
       
       links: [
@@ -48,7 +48,7 @@ export default{
       tag: 'Express',
       image: Tweeter,
       info:'Technology Used: HTML, CSS , JS, jQuery, AJAX.',
-      description: 'Tweeter is a single-page app Twitter clone.',
+      description: 'Tweeter is a single-page app Twitter clone.Technology Used: HTML, CSS , JS, jQuery, AJAX.',
       title: 'Tweeter',
      
       links: [

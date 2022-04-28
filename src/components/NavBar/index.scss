@@ -61,14 +61,15 @@
   width: 40px;
 }
  
-.logo{
+.logo-navbar{
   display: block;
   padding: 8px 0;
   margin: 8px auto;
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
-  margin-left: 2rem;
+  padding-left: 20px;
+  // margin-left: 2rem;
 
 }
 img.navbar-img{
@@ -110,6 +111,7 @@ img.navbar-img{
   .navigation{
    display: none;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -156,6 +158,9 @@ img.navbar-img{
       }
     }
     
+    }
+    .moon-sun{
+      margin-left: 20%;
     }
   }
    

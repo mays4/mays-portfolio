@@ -5,6 +5,7 @@
     // padding-bottom: 0;
     position: absolute;
     //  z-index:3;
+    width: 100%;
     
  
    
@@ -319,8 +320,15 @@ h1{
 }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
  
-  .contact .zone .letters {
+  .contact .zone .parg .contact-info-p {
+    padding-left: 10px;
  }
+ .contact .zone .form {
+   padding-left: 0;
+}
+.contact .zone .letters {
+ font-size: 28px;
+}
 }

@@ -274,24 +274,12 @@
 }
 
 }
-@media screen and (max-width: 400px) {
-  .about-co h1.about-p {
-    padding-left: 0;
-    font-size: 40px;
-   
-  }
-  .about-co .table {
-    width:320px;
-    margin-left: 40px;
-    
-  }
 
-}
 
 @media screen and (max-width: 500px) {
   .text-z .about-p{
-    font-size: 40px;
-  
+ 
+   
   }
   .about-co .cont .par{
     padding-left: 10%;
@@ -321,6 +309,21 @@
     
   }
   
+}
+
+@media screen and (max-width: 400px) {
+  .about-co h1.about-p {
+    padding-left: 10px;
+    font-size: 34px;
+    margin-left:10px ;
+   
+  }
+  .about-co .table {
+    width:320px;
+    margin-left: 40px;
+    
+  }
+
 }
 
 
