@@ -1,10 +1,9 @@
 #project-container{
-  // height: 100vh;
-  // margin-top: 0; 
+
   width: 100%;
-  // margin-bottom: 10%;
+
   padding-bottom: 30%;
-  // position: absolute;
+  
   position:relative;
   z-index: 2 ;
   
@@ -22,13 +21,9 @@
 .pro-wrap{
   
   width: 100%;
-
-
  
 }
-.letters{
-  // margin-top: 40px;
-}
+
 
 .dail{
     width: 100%;
@@ -88,7 +83,7 @@
 }
 .preview{
    background-color: rgb(250, 244, 244);
-   padding: 15px;
+   padding: 15px 15px 15px 30px;
 
 
   
@@ -138,17 +133,13 @@
 
 
 @media screen and (max-width: 1100px) {
-  .project-container{
-    // margin-top: 40%;
-
-  }
+ 
 }
 
 @media screen and (max-width: 700px) {
-  .project-container{
-    // margin-top: 120%;
-   
-
+  .custom .custom_item {
+    margin-left: 30px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 400px) {
