@@ -1,0 +1,22 @@
+.footer{
+  background-color: #BEB3B4;
+  border-top: 1px solid #E7E7E7;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  z-index: 5;
+  li{
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .footer{
+   display: none;
+   
+  }
+}

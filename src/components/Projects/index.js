@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import AnimatedLetters from '../AnimatedLetters/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  DialogContent, DialogTitle } from '@mui/material';
+import { DialogContent, DialogTitle } from '@mui/material';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import Dialog from '@mui/material/Dialog';
 import { Tabs } from '@mui/material';
@@ -13,11 +13,9 @@ import data from '../../assets/Data/data';
 const Projcet = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-
   const { theme, setTheme } = useContext(ThemeContext);
   const [tag, setTag] = useState('All');
   const [project, setProject] = useState(false);
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,8 +25,8 @@ const Projcet = () => {
 
   return (
     <>
-      <div className="project-container">
-        <div className={theme}>
+      <div >
+        <div className={theme} id="project-container">
           <div className="pro-wrap">
             <div className="project-title">
               <h1 className="letters">
@@ -41,7 +39,7 @@ const Projcet = () => {
             </div>
             <div>
               <h2 className="porojects_par">Some of the projects</h2>
-              <div>
+              <div className='tabs'>
                 <Tabs
                   value={tag}
                   className="custom"
@@ -51,9 +49,7 @@ const Projcet = () => {
                   <Tab
                     value="All"
                     label="All"
-                    className={
-                      tag ? 'custom_item active' : 'custom_item'
-                    }
+                    className={tag ? 'custom_item active' : 'custom_item'}
                   />
                   {[...new Set(data.projects.map((item) => item.tag))].map(
                     (tag) => (
@@ -61,9 +57,7 @@ const Projcet = () => {
                         label={tag}
                         value={tag}
                         className={
-                          tag === tag
-                            ? 'custom_item active'
-                            : 'custom_item'
+                          tag === tag ? 'custom_item active' : 'custom_item'
                         }
                       />
                     )
@@ -80,7 +74,6 @@ const Projcet = () => {
                       onClick={() => setProject(item)}
                     >
                       <img
-                        
                         className="thum"
                         src={item.image}
                         alt="register page"
@@ -96,13 +89,11 @@ const Projcet = () => {
             </div>
 
             <Dialog open={project} className="dail">
-            <div className="close_x">
-                  <button onClick={() => setProject(false)}>X</button>
-                </div>
+              <div className="close_x">
+                <button onClick={() => setProject(false)}>X</button>
+              </div>
               <DialogTitle className="post-title">{project.title}</DialogTitle>
               <DialogContent>
-               
-
                 {project?.images?.map((image, index) => (
                   <Carousel
                     className="project_image"

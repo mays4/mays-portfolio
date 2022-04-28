@@ -1,9 +1,13 @@
-.project-container{
-  height: 100%;
-  
+#project-container{
+  // height: 100vh;
+  // margin-top: 0; 
   width: 100%;
-  // margin-bottom: 0;
-  // padding-bottom: 0;
+  // margin-bottom: 10%;
+  padding-bottom: 30%;
+  // position: absolute;
+  position:relative;
+  z-index: 2 ;
+  
 
 }
 .close_x{
@@ -23,7 +27,7 @@
  
 }
 .letters{
-  margin-top: 40px;
+  // margin-top: 40px;
 }
 
 .dail{
@@ -135,15 +139,33 @@
 
 @media screen and (max-width: 1100px) {
   .project-container{
-    margin-top: 40%;
+    // margin-top: 40%;
 
   }
 }
 
 @media screen and (max-width: 700px) {
   .project-container{
-    margin-top: 120%;
+    // margin-top: 120%;
    
 
   }
+}
+@media screen and (max-width: 400px) {
+
+  
+  .post_wrapper {
+    margin-left: 0;
+}
+.custom .custom_item {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.contact-info-p {
+
+  padding-left: 0;
+}
+.letters{
+  padding-left: 0;
+}
 }

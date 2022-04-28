@@ -11,6 +11,8 @@ import 'animate.css';
 import Contact from '../Contact';
 import About from '../About';
 import Projects from '../Projects';
+import { Navbar } from 'react-bootstrap';
+import Footer from '../Footer';
 
 
 const Home = () => {
@@ -44,8 +46,10 @@ const Home = () => {
 
   return (
     <>
+        {/* <Navbar /> */}
       <div className={theme}>
         <div className="container">
+       
           <section className="home">
             <div className="home-page">
               <div className="text-zone">
@@ -90,17 +94,19 @@ const Home = () => {
             <About />
           </section>
           
-          <section id="contact">
-            <Contact />
-          </section>
           <section id="work" >
             <Projects />
           </section>
+          
         
          
        
          
         </div>
+           <section id="contact">
+            <Contact />
+          </section>
+
       </div>
       <Loader type="line-spin-fade-loader" />
     </>

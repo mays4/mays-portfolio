@@ -25,9 +25,9 @@ const About = () => {
   }, []);
   return (
     <>
-        <div className="about-container">
-      <div className={theme}>
-          <div className="page">
+      <div >
+        <div className={theme} id="about-container">
+          <div className="about-co">
             <div className="cont">
               <div className="text-z">
                 <h1 className="about-p">

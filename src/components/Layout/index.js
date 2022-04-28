@@ -1,6 +1,8 @@
 import './index.scss';
 import Sidbar from '../Sidbar'
 import { Outlet } from 'react-router-dom';
+import  Navbar  from '../NavBar'
+import Footer from '../Footer';
 
 
 
@@ -8,16 +10,11 @@ import { Outlet } from 'react-router-dom';
 const Layout = () => {
   return (
   <div className="App">
-   
-     
-    
-  
-  
- 
+  <Navbar/>
   <Sidbar/>
+  <Footer/>
+  <div >
 
-  <div className="page">
-   
     <Outlet/>
     
    

@@ -38,7 +38,7 @@ const Sidbar = () => {
             <FontAwesomeIcon className='moon' icon={faMoon}color="#4d4d4e" />
           }
         </div>
-      <nav>
+      <nav className='side-nav'>
         <NavLink exact='true' activeclassname='active' to='/'>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
         </NavLink>
@@ -52,7 +52,7 @@ const Sidbar = () => {
           <FontAwesomeIcon icon={faComputer} color="#4d4d4e"/>
         </NavLink>
       </nav>
-      <ul>
+      <ul className='linkedin-github'>
         <li>
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mays-alraheem">
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className='linkedin'/>
