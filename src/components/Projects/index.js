@@ -10,6 +10,7 @@ import { Tabs } from '@mui/material';
 import { Tab } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import data from '../../assets/Data/data';
+import { height } from '@mui/system';
 const Projcet = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
