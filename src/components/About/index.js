@@ -25,7 +25,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <div >
+      
         <div className={theme} id="about-container">
           <div className="about-co">
             <div className="cont">
@@ -80,7 +80,7 @@ const About = () => {
           </div>
           <Loader type="line-spin-fade-loader" />
         </div>
-      </div>
+      
     </>
   );
 };

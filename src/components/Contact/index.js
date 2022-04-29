@@ -43,12 +43,12 @@ const Contact = () => {
       <div className="contact-contact">
         <div className={theme}>
           <div className="contact">
-            {/* <div className="text-zone"> */}
+         
             <div className="zone">
               <h1 className="letters">
                 <AnimatedLetters
                   letterClass={letterClass}
-                  strArray={['C', 'o', 'n', 't', 'a', 'c', 't', '', 'M', 'e']}
+                  strArray={['C', 'o', 'n','t','a','c','t', '', 'M','e']}
                   idx={15}
                 />
               </h1>

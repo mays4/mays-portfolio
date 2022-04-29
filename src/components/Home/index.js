@@ -47,10 +47,10 @@ const Home = () => {
   return (
     <>
         {/* <Navbar /> */}
-      <div className={theme}>
-        <div className="container">
+      <div className={theme} id="container">
+        
        
-          <section className="home">
+          <div className="home">
             <div className="home-page">
               <div className="text-zone">
                 <h1 className="words">
@@ -88,25 +88,20 @@ const Home = () => {
             <div className="proto">
               <Profile />
             </div>
-           
-          </section>
-          <section id="about" > 
-            <About />
-          </section>
-          
-          <section id="work" >
-            <Projects />
-          </section>
-          
+          </div>
         
-         
-       
-         
-        </div>
-           <section id="contact">
+        <div id="about"> 
+            <About />
+            
+          </div>
+        <div id="work" >
+        <Projects />
+          </div>
+           
+        <div id="contact" >
             <Contact />
-          </section>
-
+          </div>
+        
       </div>
       <Loader type="line-spin-fade-loader" />
     </>

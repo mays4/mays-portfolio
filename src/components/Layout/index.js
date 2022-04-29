@@ -20,9 +20,7 @@ const Layout = () => {
    
    
   </div>
-  {/* <div className='contact-container'>
-    <Contact/>
-    </div> */}
+
 </div>
   )
 }
