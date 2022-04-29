@@ -38,12 +38,12 @@ const Projcet = () => {
               </h1>
             </div>
             <div>
-              <h2 className="porojects_par">Some of the projects</h2>
+              <h2 className="projects_par">Some of the projects</h2>
               <div className='tabs'>
                 <Tabs
                   value={tag}
                   className="custom"
-                  indicatorColor="gray"
+                  indicatorColor="secondary"
                   onChange={(event, newValue) => setTag(newValue)}
                 >
                   <Tab
@@ -51,13 +51,14 @@ const Projcet = () => {
                     label="All"
                     className={tag ? 'custom_item active' : 'custom_item'}
                   />
-                  {[...new Set(data.projects.map((item) => item.tag))].map(
-                    (tag) => (
+                  {[...new Set(data.projects.map((item) => (item.tags)))].map(
+                    (tagData,key) => (
                       <Tab
-                        label={tag}
-                        value={tag}
+                        key ={key}
+                        label={tagData}
+                        value={tagData}
                         className={
-                          tag === tag ? 'custom_item active' : 'custom_item'
+                          tag === tagData ? 'custom_item active' : 'custom_item'
                         }
                       />
                     )
@@ -66,10 +67,11 @@ const Projcet = () => {
               </div>
             </div>
             <div className="post_wrapper">
-              {data.projects.map((item) => (
+              {data.projects.map((item , key) => (
                 <>
-                  {tag === item.tag || tag === 'All' ? (
+                  {tag === item.tags || tag === 'All' ? (
                     <div
+                      key={key}
                       className="project-post"
                       onClick={() => setProject(item)}
                     >
@@ -96,6 +98,7 @@ const Projcet = () => {
               <DialogContent>
                 {project?.images?.map((image, index) => (
                   <Carousel
+                    key={index}
                     className="project_image"
                     autoPlay
                     interval="5000"
@@ -103,16 +106,19 @@ const Projcet = () => {
                     showThumbs={false}
                   >
                     <img
+                  
                       className="thumnail"
                       src={image.image_1}
                       alt="create URL"
                     ></img>
                     <img
+                   
                       className="thumnail"
                       src={image.image_2}
                       alt="create URL"
                     ></img>
                     <img
+                
                       className="thumnail"
                       src={image.image_3}
                       alt="create URL"

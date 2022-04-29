@@ -19,9 +19,6 @@
   // height: 100vh;
   position: relative;
   
-  
-
-  
   .zone{
     display: flex;
     flex-direction: column;
@@ -34,9 +31,6 @@
       padding-top: 20px;
       .contact-info-p{
         font-size: 20px;
-       
-        
-        // color: #3f0d2e;
         margin-bottom: 20px;
         font-weight: 300;
       }
@@ -47,7 +41,7 @@
       flex-direction: column;
       padding-top: 20px;
       padding-left: 5%;
-      // margin-top: 20px;
+  
         
         .form-l{
           width: 100%;
@@ -120,7 +114,7 @@
     padding: 8px 10px;
     
     float: right;
-    margin-right: 40%;
+    margin-right: 45%;
     
   }   
   }  
@@ -191,7 +185,7 @@ h1{
   padding-left: 80px;
 }
 .letters{
-  padding-left: 60px;
+  padding-left: 10%;
   padding-bottom: 20px;
 }
 
@@ -206,9 +200,10 @@ h1{
     .zone{
        width: 100%;
       .letters{
-        // font-size:20px;
+       
         padding-bottom: 0;
         margin-bottom: 0;
+  
       }
       .parg{
         display: flex;
@@ -259,26 +254,17 @@ h1{
  
 }
 }
-@media screen and (max-width:576px) {
-  // .contact-contact{padding-top: 100%;}
-  
-  
+@media screen and (max-width:576px) { 
   .contact{
     display: flex;
-    flex-direction: column;
-   
-    // margin-top: 10%;
-    
+    flex-direction: column; 
     .zone{
-      // display: flex;
-      // flex-direction: column;
-      width: 100%;
-      
+      width: 100%;   
       .letters{
         font-size:30px;
-        //  margin-top: 20px;
         padding-bottom: 0;
         margin-bottom: 10px;
+      
       }
       .parg{
         display: flex;
