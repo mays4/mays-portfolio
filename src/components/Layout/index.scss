@@ -66,7 +66,6 @@
  
  .projects_par{
    color: #fff;
-  //  padding-right: 4%;
  }
   .about-p{
   color: #FFFFFF;
@@ -91,13 +90,9 @@
   }
   .contact .zone input[type=text], .contact .zone input[type=email] , .contact .zone textarea{
     background: gray; 
-     color: #000;
-
-    
-   
+     color: #000; 
   }
   .flat-button {
-    
     font-family: sans-serif;
     letter-spacing: 3px;
     text-decoration: none;
@@ -128,13 +123,6 @@
   width: 100%;
 
  }
-
-
-
- 
-
-
-
 .about-page,
 .contact-page{
   .text-zone{
@@ -179,10 +167,7 @@
 
 
 @media screen and (max-width: 576px) {
-  #container {
 
-    // margin: 2px;
-  }
   .contact{
     display: flex;
     flex-direction: column;
@@ -211,9 +196,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  // .navigation{
-  //   visibility: hidden;
-  // }
+
 }
 
 @media screen and (min-width: 850px) {
@@ -221,18 +204,11 @@
   .nav-bar{
     visibility: visible;
   }
- 
-  // .footer{
-  //   display: none;
-  // }
-  
+
 }
 @media screen and (max-width: 849px) {
   .nav-bar{
     display: none;
   }
-  // .footer{
-  //  display: none;
-  // }
-  
+
 }

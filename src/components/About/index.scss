@@ -138,7 +138,6 @@
   width:500px;
   padding-top: 10%;
   // margin-left: calc(50% - 180px);
-  // padding-right: 10%;
   margin-right: 600px;
 
 
@@ -146,7 +145,7 @@
 }
 .text-z{
   display: flex;
-  // flex-direction: column;
+
 }
 .par{
   color: #fff;
@@ -159,12 +158,10 @@
 @media screen and (max-width: 1100px) {
   .about-co{
     display: flex;
-    // flex-direction: column;
     height: 100vh;
     .table{
       width:400px;
-      margin-left: 25%;
-    
+    margin-left: 25%;
     }
     .cont{
       display: flex;
@@ -172,13 +169,10 @@
       width: 100%;  
       .par-sect{
         font-size: 20px;
-        // word-wrap: break-word;
-      //  margin-right: 200px;
+        word-wrap: break-word;
       }   
        .par{
         font-size: 30px;
-        // margin-left: 10%;
-      
       }
     }
     h1.about-p{
@@ -203,25 +197,20 @@
   .about-co{
     display: flex;
     flex-direction: column;
-    // height: 100vh;
     .table{
       width:300px;
-    //  margin-left: 30%;
     }
     .cont{
       display: flex;
       width: 100%; 
-      // height: 100vh; 
         .par-sect{
         // font-size:18px;
-        // word-wrap: break-word;
+        word-wrap: break-word;
         margin-right:400px;
            }
          .par{
           font-size: 18px;
-          // word-wrap: break-word;
-          // margin-right: 400px;
-          // margin-left: 100px;
+          word-wrap: break-word;
       }
       .par-sect{
         margin-right:0;
@@ -233,7 +222,7 @@
       padding-top: 20px;
       margin-left: 0;
       font-size: 50px; 
-      // padding-left: 10%;
+      
     }
   }
 .stage-cube-cont{
@@ -258,7 +247,7 @@
   }
   .about-co .cont .par{
     padding-left: 10%;
-    font-size: 20px;
+    // font-size: 20px;
   }
   .table{
     width:320px;
@@ -283,14 +272,19 @@
 @media screen and (max-width: 400px) {
   .about-co h1.about-p {
     padding-left: 10px;
-    font-size: 34px;
+    font-size: 28px;
     margin-left:10px ;
+    
    
   }
   .about-co .table {
     width: 200px;
     margin-left: 20%;
     
+  }
+  .about-co .cont .par-sect .par
+  {
+    font-size: 14px;
   }
 .stage-cube-cont{
   .cubespinner {
