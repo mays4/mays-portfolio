@@ -18,6 +18,7 @@
   margin-top: 0;
   // height: 100vh;
   position: relative;
+ 
   
   .zone{
     display: flex;
@@ -40,7 +41,9 @@
       display: flex;
       flex-direction: column;
       padding-top: 20px;
-      padding-left: 5%;
+      padding-left: 2%;
+      padding-right: 5%;
+      margin-left: 4%;
   
         
         .form-l{
@@ -182,7 +185,7 @@ h1{
 }
 .contact-info-p{
   font-size: 28px;
-  padding-left: 80px;
+  // padding-left: 80px;
 }
 .letters{
   padding-left: 10%;
@@ -194,7 +197,7 @@ h1{
   .contact{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
   
 
     .zone{
@@ -258,6 +261,7 @@ h1{
   .contact{
     display: flex;
     flex-direction: column; 
+    margin-bottom: 10%;
     .zone{
       width: 100%;   
       .letters{
@@ -286,15 +290,15 @@ h1{
 .map-wrap {
   width: 80%;
   margin-left: 10%;
-
+  height: 500px;
   
   .leaflet-container{
-   
-    height: 400px;
+    height: 50vh;
+    // height: 400px;
     padding-top: 0;
     margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     // margin-left: 10%;
     margin-right: 0;
     // padding-left: 20px;
@@ -327,12 +331,14 @@ h1{
 }
 
 @media screen and (max-width:500px) {
-  // .contact-contact{padding-top: 90%;}
+  
   .contact .zone .parg .contact-info-p {
     padding-left: 10px;
  }
  .contact .zone .form {
    padding-left: 0;
+   margin-left: -10%;
+    padding-right: 10%;
 }
 .contact .zone .letters {
  font-size: 28px;

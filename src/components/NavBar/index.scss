@@ -120,6 +120,7 @@ img.navbar-img{
 //     margin-left: 40%;
 //   }
 // }
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -172,3 +173,8 @@ img.navbar-img{
    
  
 
+  @media screen and (max-width:400px) {
+    .moon-sun{
+        margin-left: 25%;
+    }
+  }

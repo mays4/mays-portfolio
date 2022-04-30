@@ -16,8 +16,8 @@ import {
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
   const [letterClass, setLetterClass] = useState('text-animate');
+  const { theme, setTheme } = useContext(ThemeContext);
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
@@ -36,9 +36,9 @@ const About = () => {
                     strArray={['A', 'b', 'o', 'u', 't', ' ']}
                     idx={16}
                   />
-                  {/* <div className='name-logo'> */}
+                 
                   <Logo />
-                  {/* </div> */}
+                  
                 </h1>
               </div>
               <div className="par-sect">

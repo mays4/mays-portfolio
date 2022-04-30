@@ -1,22 +1,17 @@
 #about-container{
-   
+    height: 100vh;
     margin-bottom: 0;
-    padding-bottom: 20px;
-    position: absolute;
-    overflow: hidden;
+    padding-bottom: 10px;
   
+    // position: absolute;
+    overflow: hidden;
 }
-
 .about-co{
   display: flex;
   flex-direction: row;
-  // height: 100vh;
-  // margin-bottom: 0;
-
   .cont{
     display: flex;
     flex-direction: column;
-    // width: 50%;
     .par-sect{
       margin-left: 30px;
       margin-right: 10px;
@@ -32,18 +27,16 @@
 }
 
 .stage-cube-cont {
- 
   height: 100vh;
-  padding-top: 14%;
   overflow: hidden;
   margin-left: 0;
+  // margin-top: 10%;
 }
 
 .text-z{
   display: flex;
   flex-direction: row;
   padding :10px;
-  // justify-content: center;
   .about-p{
     margin-left: 60px;
   
@@ -67,6 +60,8 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: 100px;
+  margin-top: 20%;
+  
   //  margin-left: calc(50% - 100px);
   
 
@@ -85,6 +80,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px -3px 20px 3px #ddd;
+   
   }
 
   .face1 {
@@ -140,7 +136,7 @@
 .table{
 
   width:500px;
-  padding-top: 20px;
+  padding-top: 10%;
   // margin-left: calc(50% - 180px);
   // padding-right: 10%;
   margin-right: 600px;
@@ -167,7 +163,7 @@
     height: 100vh;
     .table{
       width:400px;
-       margin-left: 100px;
+      margin-left: 25%;
     
     }
     .cont{
@@ -178,36 +174,28 @@
         font-size: 20px;
         // word-wrap: break-word;
       //  margin-right: 200px;
-        
-      }
-     
+      }   
        .par{
         font-size: 30px;
         // margin-left: 10%;
       
       }
-
     }
     h1.about-p{
       padding-top: 20px; 
     }
   }
-
-
 .stage-cube-cont{
   width: 100%;
-  
-
   .cubespinner {
-    
     margin-left: 32%;
+    margin-top: 10%;
     div{
       width: 150px;
       height: 150px;
       font-size: 80px;
     }
   }
-  
 }
 
 }
@@ -218,9 +206,7 @@
     // height: 100vh;
     .table{
       width:300px;
-      
-     margin-left: 30%;
-    
+    //  margin-left: 30%;
     }
     .cont{
       display: flex;
@@ -230,18 +216,12 @@
         // font-size:18px;
         // word-wrap: break-word;
         margin-right:400px;
-    
-    
            }
          .par{
           font-size: 18px;
           // word-wrap: break-word;
           // margin-right: 400px;
           // margin-left: 100px;
-     
-     
-       
-      
       }
       .par-sect{
         margin-right:0;
@@ -251,26 +231,21 @@
     }
     h1.about-p{
       padding-top: 20px;
+      margin-left: 0;
       font-size: 50px; 
-      padding-left: 10%;
+      // padding-left: 10%;
     }
   }
-
- 
 .stage-cube-cont{
   width: 100%;
-
-
   .cubespinner {
-    
     margin-left: 40%;
     div{
       width: 100px;
       height: 100px;
       font-size: 80px;
     }
-  }
-  
+  } 
 }
 
 }
@@ -284,23 +259,16 @@
   .about-co .cont .par{
     padding-left: 10%;
     font-size: 20px;
-
-  
-
   }
- 
-  
   .table{
     width:320px;
     margin-right: 10px;
   }
   .stage-cube-cont{
     width: 100%;
-   
-
     .cubespinner {
- 
       margin-left: 36%;
+      
       div{
         width: 100px;
         height: 100px;
@@ -320,12 +288,24 @@
    
   }
   .about-co .table {
-    width:320px;
-    margin-left: 40px;
+    width: 200px;
+    margin-left: 20%;
     
   }
 .stage-cube-cont{
- 
+  .cubespinner {
+    margin-left: 36%;
+    transform-origin: 30px 30px 0;
+    div{
+      width: 60px;
+      height: 60px;
+      font-size: 40px;
+      padding-top: 10px;
+      .face1 .face2 .face3 .face4 .face5 .face6{
+        transform:translateZ(40px);
+      }
+    }
+  }
 }
 }
 
