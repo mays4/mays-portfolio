@@ -30,12 +30,12 @@ const Sidbar = () => {
         <img className='sub-logo sidbar-img' src={LogoSubtitle} alt ='mays'/>
       </Link>
       <div className="sun-moon" >
-          <button  className='btn'onClick={toggleButton}></button>
+          {/* <button  className='btn'onClick={toggleButton}></button> */}
           { theme ==='light'?
           
-        <FontAwesomeIcon className='sun' icon={faSun}color="#4d4d4e" />
+        <FontAwesomeIcon onClick={toggleButton} className='sun' icon={faSun}color="#4d4d4e" />
         :
-            <FontAwesomeIcon className='moon' icon={faMoon}color="#4d4d4e" />
+            <FontAwesomeIcon onClick={toggleButton} className='moon' icon={faMoon}color="#4d4d4e" />
           }
         </div>
       <nav className='side-nav'>

@@ -18,17 +18,12 @@
     position: absolute;
     padding-left: 30px;
     margin-left: 200px;
-    margin-top: -60px;
+    margin-top: -30%;
     width: 100%;
-
     animation-name: solid-logo;
     animation-timing-function: ease-in;
     animation-duration: 10s;
     // opacity: 0;
-    
-   
-  
-
   }
   
 }
@@ -46,21 +41,21 @@
   stroke-width: 10;
 }
 @media screen and (max-width: 400px) {
-
+ 
   .logo-container {
     display: flex;
     flex-direction: column;
     svg{
 
       width:140px;
-      padding-top: 10px;
+      padding-top: -10%;
       transform: rotateZ(0deg) !important;
   
    
     }
     .solid-logo {
       width: 140px;
-       padding-top: 20px;
+       padding-top: 5%;
       //  padding-left: 50px;
        transform: rotateZ(0deg) !important;
       

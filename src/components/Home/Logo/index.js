@@ -1,6 +1,6 @@
 
 
-import LogoS from '../../../assets/images/full.png';
+import LogoS from '../../../assets/images/mays-4.png';
 import './index.scss';
 
 import { motion } from 'framer-motion';
@@ -18,8 +18,7 @@ const pathVarients = {
     opacity: 1,
     pathLength: 1,
     delay: 4,
-  },
-  Transition: { duration: 1, ease: 'easeInOut' },
+  }, Transition: { duration: 1, ease: 'easeInOut' },
 };
 const Logo = () => {
   return (

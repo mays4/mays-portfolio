@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react';
 import './index.scss';
-import title from '../../assets/images/logo-m-m.png';
+import title from '../../assets/images/m-6.png';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import Profile from './Profile';
@@ -80,8 +80,8 @@ const Home = () => {
                 
                 <h2>Full stack Developer</h2>
                 <br></br>
-                <Link to="/contact" className="flat-button">
-                  CONTACT ME
+                <Link to="/project" className="flat-button">
+                  Projects
                 </Link>
               </div>
             </div>

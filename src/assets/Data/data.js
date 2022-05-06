@@ -134,5 +134,23 @@ export default {
           image_3:Save,
         }]
         },
+        //  {
+        // id:6,
+        // tags: 'React',
+        // image: View,
+        // info:'Technology Used:React, PostgreSQL, Axios, Jest, storybook, Cypress.',
+        // description: 'Interview Scheduler single app page,where students can book appointments with interviewers and edit and delete them.',
+        // title:'Scheduler',
+        
+        // links: [
+        //     {link: 'https://github.com/mays4/Scheduler', icon:git},
+           
+        // ] ,
+        // images:[{
+        //   image_1: View,
+        //   image_2:Appointment,
+        //   image_3:Save,
+        // }]
+        // },
   ]
 }

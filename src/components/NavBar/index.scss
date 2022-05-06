@@ -1,16 +1,82 @@
 .navigation{
+
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
-  position: relative;
-  padding: 0.5rem 0.5rem;
+   position: fixed;
+  padding: 0.6rem 0.6rem;
   background-color: #BEB3B4;
   color: black;
+  z-index: 100;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  // opacity: 1;
+ 
+  a{
+    font-size: 22px;
+    color: #4d4d4e;
+    display: block;
+    line-height: 50px;
+    position: relative;
+    text-decoration: none;
+    margin-right:20px;
+  
+  i{
+    transition: all 0.3s ease-out; 
+  }
+  &:hover{
+    
+    color:#4e0837;
+  
+  svg{
+    opacity: 0;;
+  }
+  &:after{
+    opacity: 1;
+  }
+}
+  &:after{
+    content: '';
+    font-size:9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  &:first-child{
+    &::after{
+      content: 'HOME';
+    }
+  }
+}
+a.about-link{
+  &:after{
+    content: 'ABOUT';
+  }
+}
+a.contact-link{
+  &:after{
+    content: 'CONTACT';
+  }
+}
+a.project-link{
+  &::after{
+    content: 'Projects';
+  }
+}
+a.active{
+  svg{
+    color:#3f0d2e;
+   
+  }
+}
   
 }
+
 .hamburger {
   border: 0;
   height: 40px;
@@ -28,7 +94,7 @@
  
 }
 .hamburger:hover {
-  background-color: #d03c6f;
+  background-color: #6d1333;
 }
 .navigation-menu {
   margin-left: auto;
@@ -107,29 +173,19 @@ img.navbar-img{
     border-radius: 20px;
   }
 }
-@media screen and (min-width: 850px) {
-  .navigation{
-   display: none;
-  }
-  
-  
-}
 
-// @media screen and (min-width: 849px) {
-//   .moon-sun{
-//     margin-left: 40%;
-//   }
-// }
 
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+    margin-right: 5%;
   }
   .navigation-menu .nav-ul {
     display: none;
   }
   .navigation-menu.expanded .nav-ul {
     display: block;
+  
   }
   .navigation-menu .nav-ul {
     // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)

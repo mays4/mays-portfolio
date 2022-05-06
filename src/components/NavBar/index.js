@@ -12,7 +12,7 @@ import {
 
 } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
-import LogoS from '../../assets/images/logo-m-m.png';
+import LogoS from '../../assets/images/m-6.png';
 import { ThemeContext } from '../../context/ThemeContext';
 
 const NavBar = () => {
@@ -31,11 +31,12 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="moon-sun">
-          <button className="btn" onClick={toggleButton}></button>
+  
           {theme === 'light' ? (
-            <FontAwesomeIcon className="moon" icon={faMoon} color="#4d4d4e" />
-          ) : (
-            <FontAwesomeIcon className="sun" icon={faSun} color="#4d4d4e" />
+            <FontAwesomeIcon  onClick={toggleButton}  className="moon" icon={faMoon} color="#4d4d4e" />
+          ):(
+          
+            <FontAwesomeIcon onClick={toggleButton} className="sun" icon={faSun} color="#4d4d4e" />
           )}
         </div>
         <div>
@@ -66,8 +67,20 @@ const NavBar = () => {
             isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
           }
         >
+       
           <ul className='nav-ul'>
-          
+
+            <li className='nav-link'>
+            <NavLink exact='true' activeclassname='active' to='/'
+            NavLink onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+            >
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
+           </NavLink>
+
+            </li>
+        
             <li className='nav-link'>
               <NavLink onClick={() => {
               setIsNavExpanded(!isNavExpanded);
@@ -75,26 +88,14 @@ const NavBar = () => {
                 exact="true"
                 activeclassname="active"
                 to="/about"
-                className="link"
+                className="link about-link"
               >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
               </NavLink>
              
             </li>
 
-            <li className='nav-link'>
-              <NavLink  onClick={() => {
-              setIsNavExpanded(!isNavExpanded);
-            }}
-                exact="true"
-                activeclassname="active"
-                to="/contact"
-                className="link"
-              >
-                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-              </NavLink>
-             
-            </li>
+
             <li className='nav-link'>
               <NavLink 
                onClick={() => {
@@ -103,10 +104,23 @@ const NavBar = () => {
                 exact="true"
                 activeclassname="active"
                 to="/project"
-                className="link"
+                className="link project-link"
               >
                 <FontAwesomeIcon icon={faComputer} color="#4d4d4e"  />
               </NavLink>
+            </li>
+            <li className='nav-link'>
+              <NavLink  onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+                exact="true"
+                activeclassname="active"
+                to="/contact"
+                className="link contact-link"
+              >
+                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+              </NavLink>
+             
             </li>
           
           </ul>

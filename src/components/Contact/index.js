@@ -54,9 +54,8 @@ const Contact = () => {
               </h1>
               <div className="parg">
                 <p className="contact-info-p">
-                  I am Full-Stack Developer seeking opportunities . if you have
-                  other request or question, don't hesitate to contact me using
-                  below form .
+                  I am Full-Stack Developer seeking Full-Time job. if you have
+                  other request or question, don't hesitate to shot me a message using below form.
                 </p>
               </div>
 
@@ -117,8 +116,8 @@ const Contact = () => {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker position={[43.65107, -79.347015]}>
-                  <Popup>
-                    This Toronto where Mays lives. <br />
+                  <Popup className='popup'>
+                    This is Toronto where Mays lives. <br />
                     <img className="sidbar-img" src={LogoS} alt="logo" />
                   </Popup>
                 </Marker>

@@ -11,7 +11,7 @@ const Layout = () => {
   return (
   <div className="App">
   <Navbar/>
-  <Sidbar/>
+  {/* <Sidbar/> */}
   <Footer/>
   <div >
 

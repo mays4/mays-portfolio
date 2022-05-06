@@ -1,6 +1,4 @@
 
-
-
 .section-container{
   display: flex;
   flex-direction: column;
@@ -8,14 +6,14 @@
   padding-top: 0;
  
   position:absolute;
-  // justify-content: center;
-  // align-items: center;
+ 
   width: 100%;
   
 }
 #work{
 //  height: 100vh;
  position: relative;
+ margin-top: 0;
 }
 #about{
   height: 100vh;
@@ -30,8 +28,9 @@
 .home{
   display: flex;
   flex-direction: row;
+  margin-top: 10%;
   // margin-right: 20%;
-  margin-left: 10%;
+  // margin-left: 10%;
   // margin-top: 5%;
    height: 100vh;
   margin-bottom: 0;
@@ -97,7 +96,7 @@
 @media screen and (max-width: 1600px) {
   .home{
   
-    margin-left:18%;
+    margin-left:4%;
     h1{
       font-size: 80px;
     }
@@ -187,3 +186,8 @@
 
 }
 
+@media screen and (max-width: 700px) {
+  .home{
+    margin-top: 22%;
+  }
+}

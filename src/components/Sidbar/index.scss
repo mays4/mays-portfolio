@@ -5,9 +5,9 @@
   position: fixed;
   top:0;
   z-index: 3;
-  // min-height: 500px;
+
   padding-top: 20px;
-  // visibility: hidden;
+
 }
 .logo{
   display: block;
@@ -53,7 +53,7 @@ img.sidbar-img{
     transition: all 0.3s ease-out; 
   }
   &:hover{
-    // color: #ffd700;
+    
     color:#4e0837;
   
   svg{
