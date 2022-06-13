@@ -21,6 +21,15 @@ import Search from '../images/Search.png';
 import Save from '../images/Saving-an-appointment.png';
 import View from '../images/Scheduler-view.png';
 import Appointment from '../images/Appointment_booked.png';
+import Drum2 from '../images/Drum2.png';
+import Drum1 from '../images/Drum1.png';
+import Drum from '../images/Drum.mov';
+import calc1 from '../images/calc1.png';
+import calc2 from '../images/calc2.png';
+import Calc from '../images/Calc.mov';
+import Quote2 from '../images/Quote2.png';
+import Quote1 from '../images/Quote1.png';
+import Quote from '../images/Quote.mov';
 
 
 
@@ -134,23 +143,59 @@ export default {
           image_3:Save,
         }]
         },
-        //  {
-        // id:6,
-        // tags: 'React',
-        // image: View,
-        // info:'Technology Used:React, PostgreSQL, Axios, Jest, storybook, Cypress.',
-        // description: 'Interview Scheduler single app page,where students can book appointments with interviewers and edit and delete them.',
-        // title:'Scheduler',
+        ,{
+          id:7,
+          tags: 'React',
+          image: Drum,
+          info:'Technology Used:React, Javascript,CSS',
+          description: 'Drum Machine is a app that you can press a key and play the sound and record sounds and ajust speed and volume',
+          title:'Drum Machine',
+          
+          links: [
+              {link: 'https://github.com/mays4/Drum-machine', icon:git},
+             
+          ] ,
+          images:[{
+            image_1: Drum,
+            image_2:Drum1,
+            image_3:Drum2,
+          }]
+          },
+         {
+        id:8,
+        tags: 'React',
+        image: Calc,
+        info:'Technology Used:React, Javascript,CSS',
+        description: 'Calculator that you can use to Multiple divide sum and subtract .',
+        title:'Calcluator',
         
-        // links: [
-        //     {link: 'https://github.com/mays4/Scheduler', icon:git},
+        links: [
+            {link: 'https://github.com/mays4/calculator-', icon:git},
            
-        // ] ,
-        // images:[{
-        //   image_1: View,
-        //   image_2:Appointment,
-        //   image_3:Save,
-        // }]
-        // },
+        ] ,
+        images:[{
+          image_1: Calc,
+          image_2:calc1,
+          image_3:calc2,
+        }]
+        },
+        {
+          id:9,
+          tags: 'JQuery',
+          image: Quote,
+          info:'Technology Used:React, Javascript,CSS',
+          description: 'Quote machine is an app that can you use to generate random quote and post them in Twitter .',
+          title:'Quote',
+          
+          links: [
+              {link: 'https://github.com/mays4/Quote-Machine', icon:git},
+             
+          ] ,
+          images:[{
+            image_1:Quote,
+            image_2:Quote1,
+            image_3:Quote2,
+          }]
+          },
   ]
 }
