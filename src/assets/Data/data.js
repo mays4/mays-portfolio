@@ -206,7 +206,7 @@ export default {
             image: Recipe,
             info:'Technology Used:Angular, bootstrap,Firebase',
             description: 'Recipe app where user can create account and add recipe and add items to shopping list.',
-            title:'Quote',
+            title:'Recipe Book',
             
             links: [
                 {link: 'https://github.com/mays4/Recipe-app-Angular', icon:git},
