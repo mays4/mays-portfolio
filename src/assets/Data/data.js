@@ -39,8 +39,27 @@ import Recipe2 from '../images/Recipe2.png'
 
 export default {
   projects:[
-    { 
+    {
       id:1,
+      tags: 'Angluar',
+      image: Recipe,
+      info:'Technology Used:Angular, bootstrap,Firebase',
+      description: 'Recipe app where user can create account and add recipe and add items to shopping list.',
+      title:'Recipe Book',
+      
+      links: [
+          {link: 'https://github.com/mays4/Recipe-app-Angular', icon:git},
+          {link: 'https://recipe-book-15b88.firebaseapp.com/auth', icon:faDisplay},
+         
+      ] ,
+      images:[{
+        image_1:Recipe,
+        image_2:Recipe1,
+        image_3:Recipe2,
+      }]
+      },
+    { 
+      id:2,
       tags: 'React',
       image:Landing,
       info:'React, Next Js , Tailwind , Next Auth for authentication, Stripe API, Firebase'  ,
@@ -58,7 +77,7 @@ export default {
       }]
     },
     { 
-      id:2,
+      id:3,
       tags: 'JQuery',
       image: Tweeter,
       info:'Technology Used: HTML, CSS , JS, jQuery, AJAX.',
@@ -75,7 +94,7 @@ export default {
       } ]
     },
     {
-    id:3,
+    id:4,
     tags: 'Express',
     image:Register,
     info: 'Tech Stack: Express, Node',
@@ -93,7 +112,7 @@ export default {
     }]
     },
     {
-    id:4,
+    id:5,
     tags: 'React',
     image:Page,
     info:'React , Stream-api,twilio',
@@ -111,7 +130,7 @@ export default {
     }]
     },
     {
-      id:5,
+      id:6,
       tags: 'React',
       image:homebidder1,
       info:'HomeBidder is an online platform for buying and selling homes without the use of blind-bidding..',
@@ -129,7 +148,7 @@ export default {
       }]
       },
       {
-        id:6,
+        id:7,
         tags: 'React',
         image: View,
         info:'Technology Used:React, PostgreSQL, Axios, Jest, storybook, Cypress.',
@@ -147,7 +166,7 @@ export default {
         }]
         },
         ,{
-          id:7,
+          id:8,
           tags: 'React',
           image: Drum,
           info:'Technology Used:React, Javascript,CSS',
@@ -165,7 +184,7 @@ export default {
           }]
           },
          {
-        id:8,
+        id:9,
         tags: 'React',
         image: Calc,
         info:'Technology Used:React, Javascript,CSS',
@@ -183,7 +202,7 @@ export default {
         }]
         },
         {
-          id:9,
+          id:10,
           tags: 'JQuery',
           image: Quote,
           info:'Technology Used:React, Javascript,CSS',
@@ -200,24 +219,6 @@ export default {
             image_3:Quote2,
           }]
           },
-          {
-            id:10,
-            tags: 'Angular',
-            image: Recipe,
-            info:'Technology Used:Angular, bootstrap,Firebase',
-            description: 'Recipe app where user can create account and add recipe and add items to shopping list.',
-            title:'Recipe Book',
-            
-            links: [
-                {link: 'https://github.com/mays4/Recipe-app-Angular', icon:git},
-                {link: 'https://recipe-book-15b88.firebaseapp.com/auth', icon:faDisplay},
-               
-            ] ,
-            images:[{
-              image_1:Recipe,
-              image_2:Recipe1,
-              image_3:Recipe2,
-            }]
-            },
+          
   ]
 }
