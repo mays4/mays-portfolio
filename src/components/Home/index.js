@@ -11,14 +11,12 @@ import 'animate.css';
 import Contact from '../Contact';
 import About from '../About';
 import Projects from '../Projects';
-import { Navbar } from 'react-bootstrap';
-import Footer from '../Footer';
+
 
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const { theme, setTheme } = useContext(ThemeContext);
-  const items = [<About />, <Contact />];
+  const { theme } = useContext(ThemeContext);
   const nameArray = ['a', 'y', 's'];
   const jobArray = [
     'w',

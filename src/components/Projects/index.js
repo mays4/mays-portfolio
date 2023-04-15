@@ -10,11 +10,11 @@ import { Tabs } from '@mui/material';
 import { Tab } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import data from '../../assets/Data/data';
-import { height } from '@mui/system';
+
 const Projcet = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const [tag, setTag] = useState('All');
   const [project, setProject] = useState(false);
 
@@ -70,7 +70,7 @@ const Projcet = () => {
             <div className="post_wrapper">
               {data.projects.map((item , key) => (
                 <>
-                  {tag === item.tags || tag === 'All' ? (
+                  {tag === item.tags || tag === 'All' ?(
                     <div
                       key={key}
                       className="project-post"
@@ -86,7 +86,7 @@ const Projcet = () => {
                         <p className="post-intro">{item.description}</p>
                       </div>
                     </div>
-                  ) : null}
+                  ) :null}
                 </>
               ))}
             </div>

@@ -9,7 +9,7 @@ import AnimatedLetters from '../AnimatedLetters/index';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme} = useContext(ThemeContext);
   const form = useRef();
 
   useEffect(() => {

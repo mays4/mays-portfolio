@@ -1,5 +1,4 @@
 import { useEffect, useState, useContext } from 'react';
-import Info from './Info/index';
 import AnimatedLetters from '../AnimatedLetters/index';
 import './index.scss';
 import { ThemeContext } from '../../context/ThemeContext';
@@ -19,7 +18,7 @@ import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const [skills,setSkills]=useState(false)
   useEffect(() => {
     setTimeout(() => {
