@@ -73,7 +73,7 @@ const NavBar = () => {
             <li className='nav-link'>
             <NavLink exact='true' activeclassname='active' to='/'
             className="link home-link"
-            NavLink onClick={() => {
+              onClick={() => {
               setIsNavExpanded(!isNavExpanded);
             }}
             >

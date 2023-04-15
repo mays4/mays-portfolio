@@ -118,7 +118,7 @@ const Contact = () => {
                 <Marker position={[43.65107, -79.347015]}>
                   <Popup className='popup'>
                     This is Toronto where Mays lives. <br />
-                    <img className="sidbar-img" src={LogoS} alt="logo" />
+                    <img className="sidbar-img" src={LogoS} alt="logo" style={{"height":"24px","width":"24px","marginLeft":"68px","marginTop":"4px"}}/>
                   </Popup>
                 </Marker>
               </MapContainer>
