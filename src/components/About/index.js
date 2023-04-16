@@ -12,22 +12,21 @@ import {
   faJsSquare,
   faReact,
   faSass,
-  
 } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const { theme } = useContext(ThemeContext);
-  const [skills,setSkills]=useState(false)
+  const [skills, setSkills] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
   }, []);
-  const toggleSkills=()=>{
-     setSkills(!skills)
-  }
+  const toggleSkills = () => {
+    setSkills(!skills);
+  };
   return (
     <>
       <div className={theme} id="about-container">
@@ -40,7 +39,6 @@ const About = () => {
                   strArray={['A', 'b', 'o', 'u', 't', ' ']}
                   idx={16}
                 />
-
                 <Logo />
               </h1>
             </div>
@@ -51,54 +49,53 @@ const About = () => {
                 projects.
               </p>
               <p className="par">
-               I am passionate about learning new theories and technologies and have a great interest in learning the full development lifecycle.
+                I am passionate about learning new theories and technologies and
+                have a great interest in learning the full development
+                lifecycle.
               </p>
             </div>
           </div>
-          <div className='faces'> 
-            <div className="fa-skills" onClick={toggleSkills}   >
-              <p  className="fa-skill" >Skills</p>
+          <div className="faces">
+            <div className="fa-skills" onClick={toggleSkills}>
+              <p className="fa-skill">Skills</p>
             </div>
-            {skills === true &&(
-            <>
-            <div className="fa-1">
-              <FontAwesomeIcon className="fa1" icon={faReact} />
-            </div>
-            <br/>
-            <div className='fa-2-2'>
-            <div className="fa-2">
-              <FontAwesomeIcon className="fa2" icon={faHtml5} />
-            </div>
+            {skills === true && (
+              <>
+                <div className="fa-1">
+                  <FontAwesomeIcon className="fa1" icon={faReact} />
+                </div>
+                <br />
+                <div className="fa-2-2">
+                  <div className="fa-2">
+                    <FontAwesomeIcon className="fa2" icon={faHtml5} />
+                  </div>
+                </div>
 
-            </div>
-           
-            <br/>
-            <div className="fa-3">
-              <FontAwesomeIcon className="fa3" icon={faNode} />
-            </div>
-            <br/>
-            <div className="fa-4">
-              <FontAwesomeIcon className="fa4" icon={faJsSquare} />
-            </div>
-            <br/>
-            <div className="fa-5">
-              <FontAwesomeIcon className="fa5" icon={faGitAlt} />
-            </div>
-            <br/>
-            <div className="fa-6">
-              <FontAwesomeIcon className="fa6" icon={faCss3Alt} />
-            </div>
-            <br/>
-            <div className="fa-7">
-              <FontAwesomeIcon className="fa7" icon={faSass} />
-            </div>
-            <br/>
-          </> 
+                <br />
+                <div className="fa-3">
+                  <FontAwesomeIcon className="fa3" icon={faNode} />
+                </div>
+                <br />
+                <div className="fa-4">
+                  <FontAwesomeIcon className="fa4" icon={faJsSquare} />
+                </div>
+                <br />
+                <div className="fa-5">
+                  <FontAwesomeIcon className="fa5" icon={faGitAlt} />
+                </div>
+                <br />
+                <div className="fa-6">
+                  <FontAwesomeIcon className="fa6" icon={faCss3Alt} />
+                </div>
+                <br />
+                <div className="fa-7">
+                  <FontAwesomeIcon className="fa7" icon={faSass} />
+                </div>
+                <br />
+              </>
             )}
-            </div>
-
-
-           <div className="stage-cube-cont">
+          </div>
+          <div className="stage-cube-cont">
             <div className="cubespinner">
               <div className="face1">
                 <FontAwesomeIcon icon={faNode} />
@@ -119,7 +116,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faGitAlt} />
               </div>
             </div>
-            <div></div>
+        
           </div>
         </div>
         <Loader type="line-spin-fade-loader" />

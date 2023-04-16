@@ -45,6 +45,8 @@
         width: 100%;
         .name-email {
           display: flex;
+          
+          
         }
 
         .half {
@@ -53,6 +55,9 @@
           overflow: hidden;
           animation: fadeInUp 2s 2s;
           animation-fill-mode: forwards;
+        
+          
+          
         }
 
         div.half {
@@ -74,14 +79,18 @@
       box-sizing: border-box;
       border-radius: 20px;
       padding-left: 5%;
+      
     }
     input[name='subject'] {
       width: 80%;
       margin-left: 60px;
+      
+      
     }
     input[name='user_name'] {
       margin-left: 60px;
       width: 36%;
+      
     }
     input[name='email'] {
       margin-left: 8%;
@@ -94,18 +103,26 @@
       background: #3f0d2e;
       height: 100px;
       font-size: 16px;
-      color: #fff;
       box-sizing: border-box;
       margin-left: 60px;
       border-radius: 20px;
       padding-left: 20px;
       padding-top: 10px;
+      
+      
     }
     .flat-button {
       font-size: 13px;
       padding: 8px 10px;
       float: right;
       margin-right: 45%;
+    }
+    input::placeholder {
+      color: #eae1e7;
+      
+    }
+    textarea::placeholder{
+      color: #eae1e7;
     }
   }
 }
@@ -289,13 +306,11 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+  
   .contact  .parg .contact-info-p {
     padding-left: 2%;
-  
 
   }
- 
-
   .contact .zone .form {
     padding-left: 0;
     margin-left: 2%;

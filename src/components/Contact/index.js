@@ -69,6 +69,7 @@ const Contact = () => {
                         name="user_name"
                         placeholder="Name"
                         required
+                       
                       />
 
                       <input
