@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useContext } from 'react';
+import React,{ useEffect, useState, useRef, useContext } from 'react';
 import './index.scss';
 import emailjs from '@emailjs/browser';
 import Loader from 'react-loaders';
@@ -55,7 +55,7 @@ const Contact = () => {
               <div className="parg">
                 <p className="contact-info-p">
                   I am Full-Stack Developer seeking Full-Time job. if you have
-                  other request or question, don't hesitate to shot me a message using below form.
+                  other request or question,don&#39;t hesitate to shot me a message using below form.
                 </p>
               </div>
 

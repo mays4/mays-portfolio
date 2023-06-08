@@ -1,6 +1,9 @@
+import React from 'react';
 import './index.scss'
+import PropTypes from 'prop-types';
 
-const AnimatedLetters = ({ letterClass, strArray, idx }) => {
+const AnimatedLetters = (props) => {
+  const { letterClass, strArray, idx }=props;
   return (
     <span>
       {strArray.map((char, i) => (
@@ -10,5 +13,11 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
       ))}
     </span>
   )
-}
-export default AnimatedLetters
+};
+AnimatedLetters.propTypes = {
+   letterClass: PropTypes.string.isRequired,
+    strArray:PropTypes.string.isRequired, 
+    idx :PropTypes.string.isRequired
+};
+
+export default AnimatedLetters;

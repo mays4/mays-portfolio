@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import AnimatedLetters from '../AnimatedLetters/index';
 import './index.scss';
 import { ThemeContext } from '../../context/ThemeContext';
@@ -28,7 +28,7 @@ const About = () => {
     setSkills(!skills);
   };
   return (
-    <>
+    
       <div className={theme} id="about-container">
         <div className="about-co">
           <div className="cont">
@@ -44,7 +44,7 @@ const About = () => {
             </div>
             <div className="par-sect">
               <p className="par">
-                I'm Full-Stack developer looking for the opportunity to work
+                I am Full-Stack developer looking for the opportunity to work
                 with the latest technologies on challenging and diverse
                 projects.
               </p>
@@ -121,7 +121,7 @@ const About = () => {
         </div>
         <Loader type="line-spin-fade-loader" />
       </div>
-    </>
+  
   );
 };
 

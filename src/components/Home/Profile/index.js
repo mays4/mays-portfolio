@@ -1,6 +1,6 @@
-import './index.scss'
+import React from 'react';
+import './index.scss';
 
-import React from 'react'
 import ProfileLogo from '../../../assets/images/face6.png'
 
  const Profile = () => {

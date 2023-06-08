@@ -1,5 +1,6 @@
+
+import React, { useEffect, useState, useContext } from 'react';
 import './index.scss';
-import { useEffect, useState, useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import AnimatedLetters from '../AnimatedLetters/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +10,7 @@ import Dialog from '@mui/material/Dialog';
 import { Tabs } from '@mui/material';
 import { Tab } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
-import data from '../../assets/Data/data';
+import {projects} from '../../assets/Data/data.js';
 
 const Projcet = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -52,7 +53,7 @@ const Projcet = () => {
                     label="All"
                     className={tag ? 'custom_item active' : 'custom_item'}
                   />
-                  {[...new Set(data.projects.map((item) => (item.tags)))].map(
+                  {[...new Set(projects.map((item) => (item.tags)))].map(
                     (tagData,key) => (
                       <Tab
                         key ={key}
@@ -68,11 +69,11 @@ const Projcet = () => {
               </div>
             </div>
             <div className="post_wrapper">
-              {data.projects.map((item , key) => (
+              {projects.map((item , index) => (
                 <>
                   {tag === item.tags || tag === 'All' ?(
                     <div
-                      key={key}
+                      key={index}
                       className="project-post"
                       onClick={() => setProject(item)}
                     >

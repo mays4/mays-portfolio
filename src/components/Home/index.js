@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from 'react';
+import React,{ useEffect, useState, useContext } from 'react';
 import './index.scss';
 import title from '../../assets/images/m-6.png';
 import { Link } from 'react-router-dom';
@@ -56,7 +56,7 @@ const Home = () => {
                   <span className={`${letterClass} _12`}>i,</span>
                   <br />
                   <span className={`${letterClass} _13`}>I</span>
-                  <span className={`${letterClass} _14`}>'m</span>
+                  <span className={`${letterClass} _14`}>&#39;m</span>
                   <img
                     className="logo-img"
                     src={title}

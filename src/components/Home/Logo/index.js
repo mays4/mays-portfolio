@@ -1,5 +1,5 @@
 
-
+import React  from 'react';
 import LogoS from '../../../assets/images/mays-4.png';
 import './index.scss';
 

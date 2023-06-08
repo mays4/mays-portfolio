@@ -31,29 +31,28 @@ import Quote2 from '../images/Quote2.png';
 import Quote1 from '../images/Quote1.png';
 import Quote from '../images/Quote.mov';
 import Recipe from '../images/Recipe.png';
-import Recipe1 from '../images/Recipe1.png'
-import Recipe2 from '../images/Recipe2.png'
-
+import Recipe1 from '../images/Recipe1.png';
+import Recipe2 from '../images/Recipe2.png';
 import coach1 from '../images/coach1.png';
-import coach2 from '../images/coach2.png'
-import coach3 from '../images/coach3.png'
+import coach2 from '../images/coach2.png';
+import coach3 from '../images/coach3.png';
 
-export default {
-  projects:[
-    {
+export const projects = [
+  {
       id:11,
       tags: 'Vue',
       image:coach1,
       info:'Technology Used:Vue, Javascript, CSS, Vuex, Firebase',
-      description: 'Single page app use to find coaches and send them requests.',
+      description: 'Single page app use to find coaches and send them requests',
       title:'Find a Coach',
-      links: [
-          {link: 'https://github.com/mays4/Find-Coach-Vue', icon:git,link:'https://coach-finder-cb684.web.app/coaches',icon: faDisplay},        
+      links: [   
+          {link: 'https://github.com/mays4/Find-Coach-Vue', icon:git},
+          {link: 'https://coach-finder-cb684.web.app/coaches', icon:faDisplay}     
       ] ,
       images:[{
         image_1:coach1,
         image_2:coach2,
-        image_3:coach3,
+        image_3:coach3
       }]
       },
     {
@@ -181,7 +180,7 @@ export default {
           image_3:Save,
         }]
         },
-        ,{
+        {
           id:8,
           tags: 'React',
           image: Drum2,
@@ -234,8 +233,7 @@ export default {
             image_2:Quote1,
             image_3:Quote2,
           }]
-          },
+          }
          
           
-  ]
-}
+        ];
