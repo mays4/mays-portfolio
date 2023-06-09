@@ -130,8 +130,8 @@ export const projects = [
     id:5,
     tags: 'React',
     image:Page,
-    info:'React, Stream-api, twilio',
-    description: 'A real chat app using Stream-api , also Twillio api used  to send notifications to offline users that they got messages using there phoneNumbers' ,
+    info:'React, Stream-API, Twilio-API',
+    description: 'A real chat app using Stream-API , also Twilio API  used  to send notifications to offline users that they got messages using there phoneNumbers' ,
     title: 'Medical-pager',
     
     links: [
